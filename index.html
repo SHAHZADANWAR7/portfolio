@@ -91,6 +91,46 @@
         .card a { color: var(--accent-blue); text-decoration: none; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
         .card a:hover { text-decoration: underline; }
         .meta { font-size: 0.8rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; font-weight: 600; }
+        .credentials-container {
+            margin-top: 20px;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px 24px;
+        }
+        .credentials-container h3 {
+            margin: 0 0 12px 0;
+            color: #ffffff;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .credentials-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .credentials-list li {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .credentials-list a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .credentials-list a:hover {
+            text-decoration: underline;
+        }
         footer {
             border-top: 1px solid var(--border-color);
             padding-top: 30px;
@@ -220,6 +260,20 @@
                 <div class="meta">Nanjing University of Aeronautics and Astronautics</div>
                 <h3>Bachelor of Engineering in Aeronautical Engineering</h3>
             </div>
+        </div>
+
+        <div class="credentials-container">
+            <h3>Specialized Cloud Certifications</h3>
+            <ul class="credentials-list">
+                <li>
+                    <span><strong>Architecting Solutions on AWS</strong> &bull; Amazon Web Services (Issued Aug 2024)</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/NEKDYLY2IU2E" target="_blank">Verify Credential &rarr;</a>
+                </li>
+                <li>
+                    <span><strong>Building Data Lakes on AWS</strong> &bull; Amazon Web Services (Issued Sep 2025)</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/OW1FXT1OO4GQ" target="_blank">Verify Credential &rarr;</a>
+                </li>
+            </ul>
         </div>
     </section>
 
