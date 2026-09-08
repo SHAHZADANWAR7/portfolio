@@ -29,15 +29,29 @@
             margin-bottom: 40px;
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: center;
             flex-wrap: wrap;
             gap: 20px;
         }
-        h1 { margin: 0 0 6px 0; font-size: 2.8rem; font-weight: 700; letter-spacing: -0.025em; color: #ffffff; }
-        p.tagline { font-size: 1.15rem; color: var(--text-secondary); margin: 0; font-weight: 400; }
+        .profile-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-gold);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        h1 { margin: 0 0 4px 0; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.025em; color: #ffffff; }
+        p.tagline { font-size: 1.05rem; color: var(--text-secondary); margin: 0; font-weight: 400; }
         .links {
             display: flex;
-            gap: 16px;
+            gap: 12px;
+            flex-wrap: wrap;
         }
         .links a { 
             color: var(--text-primary); 
@@ -56,7 +70,7 @@
         }
         section { margin-bottom: 45px; }
         h2 { font-size: 1.25rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-gold); border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 24px; }
-        p.summary-text { font-size: 1.050rem; color: var(--text-secondary); max-width: 850px; }
+        p.summary-text { font-size: 1.05rem; color: var(--text-secondary); max-width: 850px; }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -82,21 +96,24 @@
 <body>
 
     <header>
-        <div>
-            <h1>Shahzad Anwar</h1>
-            <p class="tagline">Data Scientist &bull; Cloud Architect &bull; Quantitative Engineer[cite: 1]</p>
+        <div class="profile-flex">
+            <img src="headshot.jpg" alt="Shahzad Anwar" class="profile-img">
+            <div>
+                <h1>Shahzad Anwar</h1>
+                <p class="tagline">Data Scientist &bull; Cloud Architect &bull; Quantitative Engineer</p>
+            </div>
         </div>
         <div class="links">
             <a href="https://github.com/SHAHZADANWAR7" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
             <a href="https://x.com/ShahzadQuant" target="_blank">X</a>
-            <a href="https://stocksignal.io" target="_blank">StockSignal.io[cite: 1]</a>
+            <a href="https://stocksignal.io" target="_blank">StockSignal.io</a>
         </div>
     </header>
 
     <section>
         <h2>Executive Profile</h2>
-        <p class="summary-text">Data Scientist and Cloud Architect with an MS in Business Analytics and deep expertise in AWS cloud architectures[cite: 1]. Founder and architect of StockSignal.io, an industrial-grade quantitative analytics platform engineered for real-time market simulation, advanced portfolio stress testing, and algorithmic risk optimization[cite: 1].</p>
+        <p class="summary-text">Data Scientist and Cloud Architect with an MS in Business Analytics and deep expertise in AWS cloud architectures. Founder and architect of StockSignal.io, an industrial-grade quantitative analytics platform engineered for real-time market simulation, advanced portfolio stress testing, and algorithmic risk optimization.</p>
     </section>
 
     <section>
@@ -104,7 +121,7 @@
         <div class="grid">
             <div class="card">
                 <h3>StockSignal.io Platform</h3>
-                <p>Industrial-grade quantitative analytics platform engineered for real-time market simulation, advanced portfolio stress testing, and algorithmic risk optimization using React and AWS serverless architecture[cite: 1].</p>
+                <p>Industrial-grade quantitative analytics platform engineered for real-time market simulation, advanced portfolio stress testing, and algorithmic risk optimization using React and AWS serverless architecture.</p>
                 <a href="https://stocksignal.io" target="_blank">Access Terminal &rarr;</a>
             </div>
         </div>
@@ -114,16 +131,16 @@
         <h2>Academic Credentials</h2>
         <div class="grid">
             <div class="card">
-                <div class="meta">Mercer University, Atlanta, GA[cite: 1]</div>
-                <h3>Master of Science in Business Analytics[cite: 1]</h3>
+                <div class="meta">Mercer University, Atlanta, GA</div>
+                <h3>Master of Science in Business Analytics</h3>
             </div>
             <div class="card">
-                <div class="meta">Nanjing University of Aeronautics and Astronautics[cite: 1]</div>
-                <h3>Master of Business Administration[cite: 1]</h3>
+                <div class="meta">Nanjing University of Aeronautics and Astronautics</div>
+                <h3>Master of Business Administration</h3>
             </div>
             <div class="card">
-                <div class="meta">Nanjing University of Aeronautics and Astronautics[cite: 1]</div>
-                <h3>Bachelor of Engineering in Aeronautical Engineering[cite: 1]</h3>
+                <div class="meta">Nanjing University of Aeronautics and Astronautics</div>
+                <h3>Bachelor of Engineering in Aeronautical Engineering</h3>
             </div>
         </div>
     </section>
